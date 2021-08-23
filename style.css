@@ -1,0 +1,106 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 1fr;
+    font-family: 'Prompt', sans-serif;
+}
+
+nav{
+    transition: width 0.5s;
+    background-color: rgb(27, 27, 27);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8rem 1fr 8rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.btn-oponer{
+    color: white;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-oponer:hover{
+    color: rgb(27, 27, 27);
+    background-color:white;
+}
+
+.centraliza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    height: 30px;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+}
+
+.btn:hover{
+    color: rgb(27, 27, 27);
+    background-color:white;
+}
+
+.btn-perfil{
+    height: 30px;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+}
+
+.colums{
+    flex-direction: column;
+}
+
+span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: width 0.5s;
+    width: 0;
+    overflow: hidden;
+}
+
+.perfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url("https://t.ctcdn.com.br/vvAWVFlVVp6xV4660JzXPkIpxO4=/400x400/smart/i490769.jpeg");
+    background-position: center;
+    background-size: 100%;
+    border: 2px solid rgb(11, 136, 11);
+}
+
+.perfil:hover{
+    opacity: 0.5;
+}
+
+.status{
+    position :absolute;
+    bottom:20px;
+    display: none;
+    width: 300px;
+    height: 100px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-radius: 0 20px 20px 20px;
+    left: 6rem;
+    transition: 0.5s;
+}
